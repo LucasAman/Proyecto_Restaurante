@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Glory', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background: url(../Imagenes/comida.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgba(0,0,0,.1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 70px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+
+        }
+            .logo{
+                flex: 1 1 auto;
+                padding: 15px;
+                
+            }
+            .formato-logo{
+                font-family: 'Allison', cursive;
+                font-size: 50px;
+                color: #fff;
+                text-decoration: none;
+                
+            }
+            .formato-logo:hover{
+                color: seagreen;
+            }
+            .nav{
+                flex: 4 1 auto;
+                
+            }
+            .nav a{
+                color: #fff;
+                font-size: 15px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .nav a:hover{
+                color: seagreen;
+            }
+            .texto-princ{
+                display: flex;
+                align-items: center;
+                height: 400px;
+                text-align: center;
+                padding: 20px;
+            }
+            h1{
+                font-family: 'Glory', sans-serif;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+                line-height: 1.5;
+                font-weight: 200;
+            }
+            i{
+                padding: 2px;
+            }
+
+    .section{
+        background: black;
+        display: flex;
+    }
+        .articulos{
+            display: flex;
+            flex: 2 1 auto;
+            flex-flow: row wrap;
+        }
+            .plato{
+                flex: 1 1 40%;
+                color:#fff;
+                font-size: 20px;
+                padding: 15px;
+
+            }
+            h3{
+                font-family: 'Glory', sans-serif;
+                color: #fff;
+                font-size: 20px;
+                padding: 12px 0;
+                margin-top: -3px;
+                
+                
+            }
+            h4{
+                font-family: 'Glory', sans-serif;
+                color: #fff;
+                font-size: 20px;
+                padding: 12px 0;
+                
+                line-height: 1.5;
+                font-weight: 200;
+
+            }
+            h5{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+            ul{
+                padding: 12px;
+            }
+            .plato img{
+                width: 100%;
+            }
+            .navegacion{
+                
+                flex: 1 1 100% ;
+                padding: 5px;
+                font-size: 18px;
+                
+            }
+            .navegacion a{
+                color: #fff;
+                padding: 5px;
+                text-transform: uppercase;
+
+            }
+            .navegacion a:hover{
+                color: seagreen;
+            }
+            .seccion{
+                display: inline-block;
+                padding: 12px;
+                width: 75%;
+                
+            }
+            .seccion img{
+                width: 50%;
+            }
+            .seccion a{
+                color: #fff;
+                padding: 12px;
+            }
+            .seccion a:hover{
+                color: seagreen;
+            }
+            .seccion iframe{
+                padding: 12px;
+            }
+            
+        .aside{
+            flex: 1 1 auto;
+            margin: 10px 5px 10px 1px;
+            padding: 5px;
+
+        }
+        .aside img{
+            width: 100%;
+        }
+            .publicidad{
+                background: #535353;
+                
+            }
+        
+    .footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+        .pie-pag{
+            background: #B6C867;
+            width: 300px; 
+            padding: 5px; 
+            width: 100%;
+            text-align: center;  
+            font-family: 'Glory', sans-serif;
+            font-size: 25px;
+            color: black; 
+        }
+        .pie-pag a{
+            color: black;
+
+        }
+        .pie-pag a:hover{
+            color: seagreen;
+        }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+                justify-content: center;
+            
+            }
+            .social a{
+                font-size: 20px;
+                color: #fff;
+                padding: 0 3px;
+            }
+            .social a:hover{
+                color:seagreen;
+            }
+        .formu{
+            width: 75%;
+            color: #fff;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 5px;
+            letter-spacing: 1px;
+            align-content: flex-start;
+        }
+        
+            .genero {
+                display: flex;
+                flex-flow: row wrap;
+                
+               }
+            input {
+            width: 90%;
+            margin-bottom: 4px;
+            border-bottom: 10px;
+            padding: 5x;
+            box-sizing: border-box;
+            font-size: 15px;
+        }	
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    .nav a{
+        font-size: 12px;
+    }
+    .seccion iframe{
+        padding: 2px;
+        width: auto;
+    }
+    form {
+        max-width: 90%;
+        margin: auto;
+        box-sizing: border-box;
+        margin-top: 20px;
+        }
+        .genero {
+            display: flex;
+            flex-flow: row wrap;
+            
+           }
+        input {
+        width: 90%;
+        margin-bottom: 4px;
+        border-bottom: 10px;
+        padding: 5x;
+        box-sizing: border-box;
+        font-size: 15px;
+    }	
+    
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+    .off { display: none;}
+    .nav a{ 
+        font-size: 22px;;
+    }
+    
+}
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}

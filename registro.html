@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Restaurante</title>
+    <script src="https://kit.fontawesome.com/24d340e55c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Glory:wght@100&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- se crea un div con una clase padre que abarque todo el documento-->
+    <div class="padre">
+        <!-- aca se separa en el header las distintas partes como el menu la barra de nav y los enlaces sociales -->
+        <header class="header">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html" class="formato-logo">TheRestaurant</a>
+                </div>  
+                <div class="nav">
+                    <a href="index.html"><i class="fas fa-home"></i><span class="off">Inicio</span></a>
+                    <a href="nosotros.html"><i class="fas fa-user-alt"></i><span class="off">Nosotros</span></a>
+                    <a href="servicios.html"><i class="fas fa-concierge-bell"></i><span class="off">Servicios</span></a>
+                    <a href="locales.html"><i class="fas fa-map-marked-alt"></i><span class="off">Locales</span></a>
+                    <a href="contacto.html"><i class="far fa-address-book"></i><span class="off">Contacto</span></a>
+                    <a href="registro.html"><i class="far fa-user"></i><span class="off">Registro</span></a>
+                </div>
+            </div>
+            <div class="texto-princ">
+                <h1>“Una comida bien preparada tienes sabores delicados que hay que retener en la boca para apreciarlos.”
+                    Tennessee Williams</h1>
+            </div>
+        </header>
+        <!-- aca se crea una seccion para separar los articulos y tambien 2 div para publicidad -->
+        <section class="section">
+            <div class="formu">
+			<h3>Formulario para registro</h3>
+                <form action="show_data.html" target="_blank">
+                    <label for="firsname">Nombre: </label><input type="text" name="firstname" placeholder="Ingrese su nombre" size="15"><br/><br/>
+                    <label for="lastname">Apellido: </label><input type="text" name="lastname" placeholder="Ingrese su apellido" size="15"><br/><br/>
+                    <label for="street">Direccion: </label><input type="text" name="address" placeholder="Ingrese su dirección" size="30"><br/><br/>
+                    <label for="number">Numero: </label><input type="number" name="number" placeholder="Ingrese su numero"><br/><br/>
+                    <label for="provincia">Provincia: </label><input type="text" name="provincia" placeholder="Ingrese su provincia" size="30" ><br/><br/>
+                    <label for="city">Ciudad: </label><input type="text" name="city" placeholder="Ingrese su ciudad"><br/><br/>
+                    <label for="telefono">Telefono: </label><input type="tel" name="telefono" placeholder="Ingrese su telefono" ><br/><br/>
+                    <label for="birthDate">Fecha de Nacimiento (mm/dd/yyyy):</label><input type="date" name="birthdate"><br/><br/>
+                        <p>
+                             Género: 
+                            <input class="genero" type="radio" name="gender" value="hombre" checked>Hombre
+                            <input class="genero" type="radio" name="gender" value="mujer">Mujer
+                            <input class="genero" type="radio" name="gender" value="otro">Otro
+                        </p>
+                    <label for="mail">Mail: </label><input type="email" name="mail"><br/><br/>
+                    <label for="clave">Contraseña: </label><input type="password" name="clave"><br/><br/>
+                    <input type="submit" value="Enviar">
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+            <aside class="aside">
+                <div class="publicidad">
+                    <h3>Publicidad</h3>
+                    <img src="Imagenes/Publicidad.png" alt="">
+                </div>
+                <div class="publicidad">
+                    <h3>Publicidad</h3>
+                    <img src="Imagenes/Publicidad.png" alt="">
+                </div>
+            </aside>
+        </section>
+        <footer class="footer">
+            <div class="pie-pag">
+                <a href="#">Desarrollado por Lucas Aman ©</a>
+                <div class="social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
